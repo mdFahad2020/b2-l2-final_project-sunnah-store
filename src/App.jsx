@@ -1,11 +1,10 @@
-import { CarouselWithContent } from "./components/Test"
-
+import MainLayout from "./Layout/MainLayout"
 
 const App = () => {
   return (
-    <div >
-      <CarouselWithContent />
-    </div>
+    <>
+      <MainLayout />
+    </>
   )
 }
 
