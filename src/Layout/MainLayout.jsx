@@ -8,7 +8,7 @@ const MainLayout = () => {
   return (
     <div className="container mx-auto">
         <Header />
-        <div>
+        <div className="min-h-screen">
             <Outlet />
         </div>
         <Footer />

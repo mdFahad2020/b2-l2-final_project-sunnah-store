@@ -95,7 +95,7 @@ export function StickyNavbar() {
 
   return (
     <div className="max-h-[768px] w-full">
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-0 lg:py-0 shadow-none ">
+      <Navbar className="fixed top-0 z-10 w-full rounded-none lg:py-0 shadow-none ">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Link to={"/"}>
             <div className="mr-4 cursor-pointer py-1.5 font-medium">

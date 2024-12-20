@@ -2,7 +2,7 @@
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <div className="mt-44">Login</div>
   )
 }
 
