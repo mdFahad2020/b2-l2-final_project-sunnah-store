@@ -1,8 +1,8 @@
 
 
-const BannerImage = () => {
+const BannerImage = ({ src, alt }) => {
   return (
-    <div>BannerImage</div>
+      <img className="h-full w-full" src={src} alt={alt} />
   )
 }
 
