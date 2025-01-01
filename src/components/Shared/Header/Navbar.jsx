@@ -3,10 +3,10 @@ import logo from "../../../assets/images/logo.png";
 
 import {
   Navbar,
-  MobileNav,
   Typography,
   Button,
   IconButton,
+  Collapse,
 } from "@material-tailwind/react";
 import { Link, NavLink } from "react-router-dom";
 
@@ -157,16 +157,7 @@ export function StickyNavbar() {
             </IconButton>
           </div>
         </div>
-        <MobileNav open={openNav}>
-          {navList}
-          <Link to={"/auth/login"}>
-          <div className="flex items-center gap-x-1">
-              <Button fullWidth variant="gradient" size="sm" className="">
-                <span>Login</span>
-              </Button>
-          </div>
-          </Link>
-        </MobileNav>
+        <Collapse open={openNav}> {navList} <Link to={"/auth/login"}> <div className="flex items-center gap-x-1"> <Button fullWidth variant="gradient" size="sm" className=""> <span>Login</span> </Button> </div> </Link> </Collapse>
       </Navbar>
     </div>
   );

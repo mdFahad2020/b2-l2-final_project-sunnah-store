@@ -1,6 +1,7 @@
 import moment from "moment";
 import { useEffect, useState } from "react";
 
+// eslint-disable-next-line react/prop-types
 const OfferTimer = ({ targetDate }) => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(targetDate));
 
@@ -36,20 +37,20 @@ const OfferTimer = ({ targetDate }) => {
       <h2 className="text-2xl font-bold mb-2">Upcoming Offer</h2>
       <div className="flex justify-center gap-6">
         <div>
-          <span className="block text-4xl font-bold">{timeLeft.days}</span>
-          <span>Days</span>
+          <span className="block text-4xl font-bold shadow-xl px-5 py-2 mb-3">{timeLeft.days}</span>
+          <span className="font-bold">Days</span>
         </div>
         <div>
-          <span className="block text-4xl font-bold">{timeLeft.hours}</span>
-          <span>Hours</span>
+          <span className="block text-4xl font-bold shadow-xl px-5 py-2 mb-3">{timeLeft.hours}</span>
+          <span className="font-bold">Hours</span>
         </div>
         <div>
-          <span className="block text-4xl font-bold">{timeLeft.minutes}</span>
-          <span>Minutes</span>
+          <span className="block text-4xl font-bold shadow-xl px-5 py-2 mb-3">{timeLeft.minutes}</span>
+          <span className="font-bold">Minutes</span>
         </div>
         <div>
-          <span className="block text-4xl font-bold">{timeLeft.seconds}</span>
-          <span>Secomds</span>
+          <span className="block text-4xl font-bold shadow-xl px-5 py-2 mb-3">{timeLeft.seconds}</span>
+          <span className="font-bold">Seconds</span>
         </div>
       </div>
     </div>

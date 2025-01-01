@@ -3,6 +3,7 @@ import AdvertisementModal from "../../components/AdvertisementModal"
 import Ebook from "../../components/Ebook"
 import Banner from "../../components/Shared/Header/Banner/Banner"
 import OfferTimer from "./OfferTimer"
+import Categories from "./Categories/Categories"
 
 
 const Home = () => {
@@ -30,6 +31,7 @@ const Home = () => {
     <div>
       <Banner />
       <OfferTimer targetDate={targetDate} />
+      <Categories />
       <Ebook />
       <AdvertisementModal showModal={showmodal} setShowModal={setShowModal} />
     </div>
